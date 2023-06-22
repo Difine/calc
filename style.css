@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap');
+
+:root{
+    /** Colors */ 
+    --primary: #00B0D7;
+    --accent: #FF6060;
+    --dark: #000000;
+    --light: #fff;
+    --display_light: #FAFAFA;
+    --actions_light: #E9F6FF;
+    --display_dark: #00223A;
+    --actions_dark: #001B2F;
+}
+
+
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.calculator {
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 10px 32px 64px rgba(0,0,0, 0.3);
+    overflow: hidden;
+
+}
+.calculator__display {
+    padding: 20px 24px;
+    background-color: var(--display_light);
+    text-align: right;
+
+}
+.calculator__history {
+    font-size: 24px;
+}
+.calculator__history strong {
+    font-weight: 400;
+    color: var(--accent);
+}
+.calculator__total {
+    font-size: 32px;
+    font-weight: 600;
+}
+.calculator__actions {
+    padding: 16px;
+    padding-bottom: 32px;
+    border-radius: 20px;
+    background-color: var(--actions_light);
+}
+
+.calculator__row {
+    display: flex;
+    justify-content: space-between;
+}
+.calculator_col {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
