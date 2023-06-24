@@ -34,13 +34,40 @@ body {
     overflow: hidden;
 
 }
+
+.calculator__head {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light);
+}
+.calculator__time {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.calculator__info {
+    display: flex;
+    margin-top: 10px;
+    margin-right: 15px;
+    
+}
+.calculator_communication {
+    margin-right: 5px;
+}
+.calculator__wifi {
+    margin-right: 5px;
+}
 .calculator__display {
+    height: 161px;
     padding: 20px 24px;
     background-color: var(--display_light);
     text-align: right;
 
 }
 .calculator__history {
+    margin-top: 75px;
     font-size: 24px;
 }
 .calculator__history strong {
@@ -52,6 +79,8 @@ body {
     font-weight: 600;
 }
 .calculator__actions {
+    margin-top: -25px;
+    cursor: pointer;
     padding: 16px;
     padding-bottom: 32px;
     border-radius: 20px;
@@ -62,10 +91,19 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.calculator_col {
+.calculator__col {
     width: 64px;
     height: 64px;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.calculator__col_reset {
+    color: var(--accent);
+}
+
+.calculator__col_action {
+    color: var(--primary);
 }
